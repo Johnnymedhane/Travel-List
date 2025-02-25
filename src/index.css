@@ -132,3 +132,49 @@ input[type="checkbox"] {
   font-weight: 700;
   padding: 3.2rem 0;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    word-spacing: 20px;
+    letter-spacing: -3px;
+  }
+
+  .add-form {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    word-spacing: 10px;
+    letter-spacing: -2px;
+  }
+
+  .add-form {
+    padding: 1.6rem 0;
+  }
+
+  .list ul {
+    width: 100%;
+  }
+
+  .list li {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
